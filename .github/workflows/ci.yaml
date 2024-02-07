@@ -19,6 +19,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Install mistune package
+        run: |
+          cd mistune
+          pip install -e .
+
       - name: Run Tests
         run: |
           python -m unittest discover -s tests
