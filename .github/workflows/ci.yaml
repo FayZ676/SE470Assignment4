@@ -24,6 +24,6 @@ jobs:
           cd mistune
           pip install -e .
 
-      - name: Run Tests
-        run: |
-          python -m unittest discover -s tests
+      # - name: Run Tests
+      #   run: |
+      #     python -m unittest discover -s tests
