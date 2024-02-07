@@ -12,7 +12,7 @@ class TestMain(unittest.TestCase):
   def test_mistune(self):
       sample_markdown = "# Hello world"
       self.assertEqual(convert_markdown_to_html(sample_markdown), 
-                       '<h1>Hello world</h1>')
+                       '<h1>Hello world</h1>\n')
 
 if __name__ == "__main__":
   unittest.main()
