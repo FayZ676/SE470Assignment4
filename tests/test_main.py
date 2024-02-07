@@ -10,9 +10,9 @@ class TestMain(unittest.TestCase):
     self.assertEqual(add(2, 3), 6)
 
   def test_mistune(self):
-      sample_markdown = "# Hello world"
+      sample_markdown = ">Hello world"
       self.assertEqual(convert_markdown_to_html(sample_markdown), 
-                       '<h1>Hello world</h1>\n')
+                       '<blockquote>\n<p>Hello world</p>\n</blockquote>\n')
 
 if __name__ == "__main__":
   unittest.main()

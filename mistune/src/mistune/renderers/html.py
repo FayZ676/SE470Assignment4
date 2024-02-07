@@ -137,7 +137,8 @@ class HTMLRenderer(BaseRenderer):
         return html + '>' + escape_text(code) + '</code></pre>\n'
 
     def block_quote(self, text: str) -> str:
-        return '<blockquote>\n' + text + '</blockquote>\n'
+        # return '<blockquote>\n' + text + '</blockquote>\n'
+        return f"<blockquote>\n{text}</blockquote>\n"
 
     def block_html(self, html: str) -> str:
         if self._escape:
